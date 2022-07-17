@@ -395,9 +395,9 @@ nav .fa {
     position: absolute;
     background-color: #f44336;
     height: 100vh; /* Complete height of the screen */
-    width: 200px;
+    width: 0; /* Hides the items in the side bar */
     top: 0;
-    right: -200px; /* Push the bar out of sight */
+    right: 0;
     text-align: left;
     z-index: 2; /* pushes the side bar to the front */
     transition: 1s;
