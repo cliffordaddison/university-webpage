@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Google Fonts - Poppins -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon/favicon.ico">
+
+  <title>University Website Design</title>
+</head>
+<body>
+
+  <!------------ Heading ------------>
+  <section class="header">
+    <nav>
+
+      <!-- The image of the logo is embedded in an anchor tag -->
+      <a href="index.html">
+        <img src="images/logo.png" alt="logo">
+      </a>
+
+      <!-- Navigation links -->
+      <div class="nav-links" id="navLinks">
+      
+      <!-- Close icon -->
+      <i class="fa fa-times" onclick="hideMenu()"></i>
+
+        <ul>
+          <li>
+            <a href="">HOME</a>
+          </li>
+          <li>
+            <a href="">ABOUT</a>
+          </li>
+          <li>
+            <a href="">COURSE</a>
+          </li>
+          <li>
+            <a href="">BLOG</a>
+          </li>
+          <li>
+            <a href="">CONTACT</a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Bars icon -->
+      <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+
+    <!-- Text in the body of the header -->
+    <div class="text-box">
+      <h1>Ghana's Biggest University</h1>
+      <p>
+        Making website is now one of the easiest things in the world. You just need to learn HTML, CSS and <br> Javascript and you are good to go.
+      </p>
+      <a href="" class="header-button">Visit us to know more</a>
+    </div>
+  </section>
+
+  <!------------ Course Section ------------>
+  <section class="course">
+    <h1>Courses We Offer</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+
+    <div class="row">
+      <div class="course-col">
+        <h3>Intermediate</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem nulla voluptatibus veniam distinctio consectetur dolorem libero fugiat consequuntur hic incidunt provident ratione debitis, iusto soluta! Doloribus nobis repudiandae error esse.
+        </p>
+      </div>
+      <div class="course-col">
+        <h3>Degree</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem nulla voluptatibus veniam distinctio consectetur dolorem libero fugiat consequuntur hic incidunt provident ratione debitis, iusto soluta! Doloribus nobis repudiandae error esse.
+        </p>
+      </div>
+      <div class="course-col">
+        <h3>Post Graduation</h3>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rem nulla voluptatibus veniam distinctio consectetur dolorem libero fugiat consequuntur hic incidunt provident ratione debitis, iusto soluta! Doloribus nobis repudiandae error esse.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!------------ Campus Section ------------>
+  <section class="campus">
+    <h1>Our Global Campus</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+
+    <div class="row">
+      <div class="campus-col">
+        <img src="images/london.png" alt="london-campus">
+        <div class="layer">
+          <h3>ACCRA</h3>
+        </div>
+      </div>
+      <div class="campus-col">
+        <img src="images/newyork.png" alt="new-york-campus">
+        <div class="layer">
+          <h3>KUMASI</h3>
+        </div>
+      </div>
+      <div class="campus-col">
+        <img src="images/washington.png" alt="washington-campus">
+        <div class="layer">
+          <h3>TAKORADI</h3>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+  <!------------ Facilities Section ------------>
+  <section class="facilities">
+    <h1>
+      Our Facilities
+    </h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <div class="row">
+      <div class="facilities-col">
+        <img src="images/library.png" alt="library">
+        <h3>World Class Library</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus rem modi, magnam.
+        </p>
+      </div>
+      <div class="facilities-col">
+        <img src="images/basketball.png" alt="basketball">
+        <h3>Largest Playground</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus rem modi, magnam.
+        </p>
+      </div>
+      <div class="facilities-col">
+        <img src="images/cafeteria.png" alt="cafeteria">
+        <h3>Tasty and Health Food</h3>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus rem modi, magnam.
+        </p>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!------------ Testimonials Section ------------>
+  <section class="testimonials">
+    <h1>What Our Students Say</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </p>
+    <div class="row">
+      <div class="testimonials-col">
+        <img src="images/user1.jpg" alt="user1">
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo nihil enim aliquam minima libero exercitationem, quasi ea eum atque natus, harum, vitae fugiat rem perspiciatis! Expedita aut rerum ducimus error.
+          </p>
+          <h3>Sandra Adu</h3>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-o"></i>
+          </div>
+      </div>
+      <div class="testimonials-col">
+        <img src="images/user2.jpg" alt="user2">
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quo nihil enim aliquam minima libero exercitationem, quasi ea eum atque natus, harum, vitae fugiat rem perspiciatis! Expedita aut rerum ducimus error.
+          </p>
+          <h3>Nana Addison</h3>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star"></i>
+          <i class="fa fa-star-half-o"></i>
+        </div>
+    </div>
+  </section>
+
+
+
+  <!------------ Call to Action Section ------------>
+  <section class="cta">
+    <h1>Enroll for our various online courses <br> Anywhere from the world</h1>
+    <a href="" class="header-button">CONTACT US</a>
+  </section>
+
+
+  
+  <!------------ Footer ------------>
+  <section class="footer">
+    <h4> About Us</h4>
+    <p>
+      Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt numquam cupiditate eum laboriosam ducimus optio quo ab, 
+      <br>
+       dignissimos corporis earum fuga consequuntur vero? Voluptates quis blanditiis rerum odio quod optio!
+    </p>
+    <div class="icons">
+      <i class="fa fa-facebook"></i>
+      <i class="fa fa-twitter"></i>
+      <i class="fa fa-instagram"></i>
+      <i class="fa fa-linkedin"></i>
+    </div>
+    <p><strong>Made with <i class="fa fa-heart-o"></i> by CliffDevs</strong></p>
+
+  </section>
+
+
+
+
+  <!-- Javascript - Side bar toggle Menu -->
+  <script>
+
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+  </script>
+
+</body>
+</html>

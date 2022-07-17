@@ -1,0 +1,444 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* ----------- The Header Section ---------- */
+.header {
+  min-height: 100vh; /* Learn - vh */
+  width: 100%;
+  background-image: linear-gradient(rgba(4, 9, 30, 0.7),rgba(4, 9, 30, 0.7)), url(images/banner.png); /* Learn - linear gradient*/
+  background-position: center;
+  background-size: cover;
+  position: relative;
+}
+
+/* Nav Tag */
+nav {
+  display: flex;
+  padding: 2% 6%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Logo in the Nav Tag */
+nav img {
+  width: 150px;
+}
+
+/* Links in the Nav */
+.nav-links {
+  flex: 1;
+  text-align: right;
+}
+
+/* Lists in the Nav Nav-Links */
+.nav-links ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 8px 12px;
+  position: relative;
+}
+
+/* Anchor tags in the Nav-Links */
+.nav-links ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+/* Effects on the Nav Lists - Learn more about this*/
+.nav-links ul li::after {
+  content: '';
+  width: 0%;
+  height: 3px;
+  background-color: #f44336;
+  display: block;
+  margin: auto;
+  transition: 0.3s;
+}
+
+/* Effects after hover */
+.nav-links ul li:hover::after {
+  width: 100%;
+}
+
+/* Text Box items */
+.text-box {
+  width: 90%;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%); /* Learn more */
+  text-align: center;
+}
+
+/* The H1 element in the Text Box */
+.text-box h1 {
+  font-size: 62px;
+}
+
+/* The p element in the Text Box */
+.text-box p {
+  margin: 10px 0 40px;
+  font-size: 16px;
+}
+
+/* Anchor tag - Button in the header */
+.header-button {
+  display: inline-block;
+  text-decoration: none;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 12px 34px;
+  background: transparent;
+  position: relative;
+  cursor: pointer;
+}
+
+/* Effects on header button */
+.header-button:hover {
+  border: 1px solid #f44336;
+  background-color: #f44336;
+  transition: 0.7s;
+}
+
+/* Do not display the font awesome icons on larger screens */
+nav .fa {
+  display: none;
+}
+
+
+/* ----------- The Courses Section ---------- */
+.course {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.course h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.course p {
+  color: rgb(84, 84, 84);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.row {
+  margin-top: 5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.course-col {
+  flex-basis: 31%; /* Flex-basis is the width between flex items */
+  background-color: #fff3f3;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  box-sizing: border-box;
+  transition: 0.5s;
+  padding: 0 5%;
+}
+
+.course-col:hover {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}
+
+.course-col h3 {
+  text-align: center;
+  font-size: 600;
+  margin: 10px 0;
+}
+
+
+/* ----------- The Campus Section ---------- */
+.campus {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.campus h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.campus p {
+  color: rgb(84, 84, 84);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.campus-col {
+  flex-basis: 32%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+  position: relative;
+  overflow: hidden;
+}
+
+.campus-col img {
+  width: 100%;
+  display: block; /* Makes the image fit in it's container */
+}
+
+.layer {
+  background-color: transparent;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: 0.5s;
+}
+
+.layer:hover {
+  background-color: rgba(226, 0, 0, 0.4);
+}
+
+.layer h3 {
+  width: 100%;
+  font-weight: 500;
+  color: #fff;
+  font-size: 26px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.layer:hover h3 {
+  bottom: 49%;
+  opacity: 1;
+}
+
+
+/* ----------- The Facilities Section ---------- */
+.facilities {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.facilities h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.facilities p {
+  color: rgb(84, 84, 84);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.facilities-col {
+  flex-basis: 31%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+}
+
+.facilities-col img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+
+.facilities-col h3 {
+  text-align: left;
+  margin: 15px 0 16px;
+}
+
+.facilities-col p {
+  padding: 0;
+  text-align: left;
+}
+
+
+/* ----------- The Testimonials Section ---------- */
+.testimonials {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 100px;
+}
+
+.testimonials h1 {
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.testimonials p {
+  color: rgb(84, 84, 84);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.testimonials-col {
+  flex-basis: 44%;
+  border-radius: 10px;
+  margin-bottom: 5%;
+  text-align: left;
+  background-color: #fff3f3;
+  padding: 25px;
+  cursor: pointer;
+  display: flex;
+}
+
+.testimonials-col img {
+  height: 40px;
+  margin-left: 5px;
+  margin-right: 30px;
+  border-radius: 100%;
+}
+
+.testimonials-col p {
+  padding: 0;
+}
+
+.testimonials-col h3 {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.testimonials-col .fa {
+  color: #f44336;
+}
+
+
+/* ----------- Call to Action Section ---------- */
+.cta {
+  width: 80%;
+  margin: 100px auto;
+  text-align: center;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/banner2.jpg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  padding: 100px 0;
+}
+
+.cta h1 {
+  color: #fff;
+  margin-bottom: 40px;
+  padding: 0;
+}
+
+
+/* ----------- Footer ---------- */
+.footer {
+  background-color: #f44336;
+  width: 100%;
+  text-align: center;
+  padding-top: 30px 0;
+}
+
+.footer h4 {
+  margin-bottom: 25px;
+  margin-top: 20px;
+  padding: 15px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.footer p {
+  color: rgb(184, 184, 184);
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 22px;
+  padding: 10px;
+}
+
+.icons .fa {
+  color: rgb(184, 184, 184);
+  margin: 0 13px;
+  cursor: pointer;
+  padding: 18px 0;
+}
+
+
+
+
+
+
+/* For smaller screens - mobile phone */
+@media(max-width: 700px) {
+
+  /* Header size is reduced */
+  .text-box h1 {
+    font-size: 20px;
+  }
+
+  /* The lists of links in the Nav Links in a side bar */
+  .nav-links ul li {
+    display: block; /* changed to block lists */
+  }
+
+  .nav-links {
+    position: absolute;
+    background-color: #f44336;
+    height: 100vh; /* Complete height of the screen */
+    width: 200px;
+    top: 0;
+    right: -200px; /* Push the bar out of sight */
+    text-align: left;
+    z-index: 2; /* pushes the side bar to the front */
+    transition: 1s;
+  }
+
+  /* Display font awesome icon */
+  nav .fa {
+    display: block;
+    color: #fff;
+    margin: 10px;
+    font-size: 22px;
+    cursor: pointer;
+  }
+
+  /* Padding to the List away from the side bar */
+  .nav-links ul {
+    padding: 30px;
+  }
+
+  /* Push Courses to align in one column */
+  .row {
+    flex-direction: column;
+  }
+
+  .testimonials-col img {
+    margin-left: 0x;
+    margin-right: 15px;
+  }
+
+  .cta h1 {
+    font-size: 24px;
+  }
+
+}
+
+
+
+
+
+
+
+
+
+
